@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todo/models/TodoModel.dart';
-
-import 'package:todo/screens/home.dart';
 import 'package:provider/provider.dart';
 import 'package:todo/screens/show_note.dart';
+import 'package:todo/screens/tryHome.dart';
 
 void main() {
   runApp(MultiProvider(
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: const ToDo(),
+      home: const Home(),
       routes: {
         "/add": (context) => const Task(),
       },
