@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:todo/models/TodoModel.dart';
@@ -42,7 +43,9 @@ class _TaskState extends State<Task> {
                         description: descController.text,
                         title: titleController.text,
                         time: DateFormat.MMMd('en_US').format(DateTime.now())));
-
+                Get.snackbar("Saved", "Your tasks has been saved",
+                    backgroundColor: Colors.green[400],
+                    snackPosition: SnackPosition.BOTTOM);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const ToDo()));
               },

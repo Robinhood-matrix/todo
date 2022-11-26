@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:todo/models/TodoModel.dart';
 import 'package:todo/models/details.dart';
@@ -61,6 +62,9 @@ class _EditNoteState extends State<EditNote> {
                     _titleController.text,
                     _descController.text,
                     widget.note.time);
+                Get.snackbar("Deleted", "",
+                    backgroundColor: Colors.redAccent,
+                    snackPosition: SnackPosition.BOTTOM);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const ToDo()));
               },

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:todo/models/TodoModel.dart';
 import 'package:todo/screens/editnotescreen.dart';
 import 'package:todo/screens/tryHome.dart';
@@ -36,8 +37,8 @@ class _ToDoState extends State<ToDo> {
             ListTile(
               title: const Text('Go Back'),
               onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => const Home()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Home()));
                 // Update the state of the app.
                 // ...
               },
@@ -106,7 +107,7 @@ class _ToDoState extends State<ToDo> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 color: Colors.red),
-                            alignment: Alignment.centerRight,
+                            alignment: Alignment.center,
                             child: const Icon(
                               Icons.delete_outline_rounded,
                               color: Colors.white,
@@ -119,12 +120,10 @@ class _ToDoState extends State<ToDo> {
 
                             if (direction == DismissDirection.endToStart) {
                               // ignore: deprecated_member_use
-                              Scaffold.of(context).showSnackBar(const SnackBar(
-                                  backgroundColor: Colors.black,
-                                  content: Text(
-                                    "Deleted",
-                                    style: TextStyle(color: Colors.white),
-                                  )));
+
+                              Get.snackbar("Deleted", "",
+                                  backgroundColor: Colors.redAccent,
+                                  snackPosition: SnackPosition.BOTTOM);
                             }
                           },
                           child: Container(
