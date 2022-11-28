@@ -1,16 +1,15 @@
-# todo
+# TODO App
 
-A new Flutter project.
+Just a todo app for my skill enhancement and getting familiar to statemanagmentt and database. 
+This app is just a copy of a UI. So what it does is basic CRUD operation.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Here is some UI of the app.
+![Screenshot_1669631994](https://user-images.githubusercontent.com/77602217/204257883-064c8374-1c3d-43c3-a5b1-9fecf20bd1f8.png)
+![Screenshot_1669632041](https://user-images.githubusercontent.com/77602217/204257895-9e80752d-a434-4cb4-aad6-6d2ed150ba68.png)
+![Screenshot_1669632038](https://user-images.githubusercontent.com/77602217/204257910-c7cedcd0-c1c8-4643-8725-46b7e587bc07.png)
+![Screenshot_1669632091](https://user-images.githubusercontent.com/77602217/204257920-92e8a080-5724-49a6-8cc0-f24510bc9a65.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
